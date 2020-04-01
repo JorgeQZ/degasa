@@ -1,0 +1,83 @@
+header {
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+header .custom-logo {
+  top: calc(50% - 17.5px);
+  left: 10px;
+  position: absolute;
+  width: auto;
+  max-height: 35px;
+}
+
+header .main-menu .menu {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .main-menu .menu li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+header .main-menu .menu li a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header .main-menu .menu li a:hover {
+  color: #dfae00;
+}
+
+header .main-menu .menu li.current-menu-item a {
+  font-weight: 900;
+  color: #dfae00;
+}
+
+header .social-links {
+  position: absolute;
+  top: calc(50% - 12.5px);
+  right: 10px;
+}
+
+header .social-links a img {
+  width: 25px;
+}
+
+* {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: "Avenir";
+  font-style: normal;
+  line-height: 1;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: grey;
+}
