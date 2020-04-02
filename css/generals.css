@@ -82,3 +82,7 @@ body {
 body {
   background: grey;
 }
+
+a {
+  text-decoration: none;
+}
