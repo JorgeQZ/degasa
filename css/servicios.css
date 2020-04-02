@@ -1,0 +1,292 @@
+.contenedor-general-servicios {
+  position: relative;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios {
+  position: absolute;
+  top: -8vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 8vw;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab {
+  background: white;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  width: 13%;
+  height: 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab img {
+  width: 67%;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab .mask {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab:nth-child(2) {
+  background: #626262;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab:hover {
+  height: 8vw;
+}
+
+.contenedor-general-servicios .contenedor-tabs-servicios .cont-tab.active {
+  height: 8vw;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio {
+  display: none;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio.active {
+  display: block;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion1 .cont-col {
+  background-color: #be6400;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion1 .cont-col::after {
+  border-left: 25px solid #be6400;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion2 .cont-seccion2 .cont-col .img {
+  border: 10px solid #e28014;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion2 .cont-seccion2 .cont-col .info p strong {
+  color: #e28014;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion2 .cont-seccion2 .cont-col .info .dec {
+  background: #e28014;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(2) .contenedor-seccion1 .cont-col {
+  background-color: #004394;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(2) .contenedor-seccion1 .cont-col::after {
+  border-left: 25px solid #004394;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(2) .contenedor-seccion2 .cont-seccion2 .cont-col .img {
+  border: 10px solid #185aa8;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(2) .contenedor-seccion2 .cont-seccion2 .cont-col .info p strong {
+  color: #185aa8;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(2) .contenedor-seccion2 .cont-seccion2 .cont-col .info .dec {
+  background: #185aa8;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion1 .cont-col {
+  background-color: white;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion1 .cont-col .info img {
+  border-bottom: 5px solid #e2b519;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion1 .cont-col .info p {
+  color: #666862;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion1 .cont-col::after {
+  border-left: 25px solid white;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion2 .cont-seccion2 .cont-col .img {
+  border: 10px solid #e2b519;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion2 .cont-seccion2 .cont-col .info p strong {
+  color: #e2b519;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(3) .contenedor-seccion2 .cont-seccion2 .cont-col .info .dec {
+  background: #e2b519;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col {
+  width: 50%;
+  padding: 140px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col .info img {
+  height: 40px;
+  border-bottom: 5px solid white;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 15px;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col .info p {
+  color: white;
+  padding: 0 75px;
+  width: calc(93% - 150px);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col:first-child::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -25px;
+  top: 42%;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid white;
+  z-index: 9;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col:first-child::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -25px;
+  top: 42%;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  z-index: 9;
+  opacity: .9;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 {
+  padding-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .img img {
+  width: 100%;
+  display: block;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info {
+  width: 100%;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info p {
+  max-width: 80%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info p strong {
+  font-size: 22px;
+  margin: 0;
+  max-width: 80%;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info ul {
+  padding-left: 20px;
+  -webkit-columns: 2;
+          columns: 2;
+  margin-top: 30px;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info ul li {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info .dec {
+  height: 9px;
+  width: 100%;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col:first-child {
+  width: 55%;
+}
+
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col:last-child {
+  width: 45%;
+  margin-left: 35px;
+}
