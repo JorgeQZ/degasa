@@ -52,6 +52,10 @@ function add_theme_scripts() {
         wp_enqueue_style( 'servicios', get_template_directory_uri() . '/css/servicios.css', array(), filemtime( get_stylesheet_directory() . '/css/servicios.css' ), 'all');
     }
 
+    if(is_page_template('page-nosotros.php')){
+        wp_enqueue_style( 'nosotros', get_template_directory_uri() . '/css/nosotros.css', array(), filemtime( get_stylesheet_directory() . '/css/nosotros.css' ), 'all');
+    }
+
     if(is_page_template('front-page.php')):
     wp_enqueue_style( 'front-page', get_template_directory_uri() . '/css/front-page.css', array(), filemtime( get_stylesheet_directory() . '/css/front-page.css' ), 'all');
 
