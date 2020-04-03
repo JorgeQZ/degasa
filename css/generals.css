@@ -64,6 +64,10 @@ header .social-links a img {
   width: 25px;
 }
 
+footer {
+  padding: 30px 60px;
+}
+
 * {
   scroll-behavior: smooth;
   -webkit-box-sizing: content-box;
