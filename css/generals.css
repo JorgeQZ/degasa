@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  top: 0;
   z-index: 10;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -15,14 +16,29 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 60px;
+  -webkit-transition: background-color 0.1s ease-in, top 0.7s ease-in-out;
+  transition: background-color 0.1s ease-in, top 0.7s ease-in-out;
 }
 
-header .custom-logo {
+header.scrolled-color {
+  background-color: #004394;
+}
+
+header .brand-logo {
   top: calc(50% - 17.5px);
   left: 10px;
   position: absolute;
   width: auto;
   max-height: 35px;
+}
+
+header .brand-logo .customize-partial-edit-shortcut-custom_logo {
+  left: 30px;
+}
+
+header .brand-logo .custom-logo {
+  max-width: 180px;
+  height: auto;
 }
 
 header .main-menu .menu {
@@ -66,6 +82,59 @@ header .social-links a img {
 
 footer {
   padding: 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  max-width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .column ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .column ul li {
+  line-height: 1.2;
+}
+
+footer .column p {
+  line-height: 1.2;
+  color: #676863;
+}
+
+footer .column a {
+  color: #676863;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+footer .column a:hover {
+  color: #004394;
 }
 
 .social-container {
@@ -105,8 +174,55 @@ footer {
 }
 
 .social-container a:hover .item img.hover {
-  -webkit-transform: translateY(calc(-100% - 8px));
-          transform: translateY(calc(-100% - 8px));
+  -webkit-transform: translateY(calc(-100% - 3px));
+          transform: translateY(calc(-100% - 3px));
+}
+
+.wg-contact-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wg-contact-container .item .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.wg-contact-container .item .col img {
+  width: 40px;
+}
+
+.wg-contact-container .item .col span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #004394;
+  height: 12px;
+}
+
+.wg-contact-container .item .col a {
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  line-height: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #004394;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.wg-contact-container .item .col a:hover {
+  color: #004394;
 }
 
 * {

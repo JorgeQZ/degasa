@@ -150,7 +150,7 @@ get_header();?>
         <img src="<?php echo get_template_directory_uri().'/img/icon-pdf.png'?>" alt="">
         <div class="text">
             DESCARGA NUESTRO CATÁLOGO DE OBRAS <br>
-            <a href="#"><strong>COMPLETO AQUÍ</strong><a>
+            <a href="#"><strong>COMPLETO AQUÍ</strong></a>
         </div>
     </div>
 </div>

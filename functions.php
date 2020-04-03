@@ -1,15 +1,19 @@
 <?php
 
 include "widgets/icons-social-media.php";
+include "just-testing/customizing-theme.php";
 
 if ( ! isset ( $content_width) )
 $content_width = 800;
 
 if ( ! function_exists( 'degasa_setup' ) ) :
     function degasa_setup() {
+        add_theme_support( 'title-tag' );
         add_theme_support( 'custom-logo' );
+        add_theme_support( 'custom-header' );
         add_theme_support( 'post-thumbnails' );
-
+        add_theme_support( 'customize-selective-refresh-widgets' );
+        add_theme_support('editor-styles');
     }
 endif;
 add_action( 'after_setup_theme', 'degasa_setup' );
@@ -70,6 +74,14 @@ function add_theme_scripts() {
 
 function wpb_widgets_init() {
 
+    register_sidebar( array(
+        'name' =>__( 'Header Right', 'wpb'),
+        'id' => 'header-right',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
 
     register_sidebar( array(
         'name' => __( 'Footer Columna 1', 'wpb' ),
@@ -118,13 +130,6 @@ function wpb_widgets_init() {
     ) );
 
 
-    register_sidebar( array(
-        'name' =>__( 'Footer Column 5', 'wpb'),
-        'id' => 'fcolumn-5',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
+
 }
 add_action( 'widgets_init', 'wpb_widgets_init' );

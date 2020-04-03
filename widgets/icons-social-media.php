@@ -14,7 +14,6 @@ class degasa_widget extends WP_Widget {
         $title = apply_filters( 'widget_title', $instance['title'] );
         $facebook = $instance['degasa_facebook'];
         $email = $instance['degasa_email'];
-
         $twitter = $instance['degasa_twitter'];
 
 
@@ -70,7 +69,8 @@ public function form( $instance ) {
 <div class="degasa_social_icons_admin_container">
     <p>
         <label for="<?php echo $this->get_field_id( 'title' ); ?>"><strong><?php _e( 'Title:' ); ?></strong></label>
-        <img src="<?php echo get_template_directory_uri().'/img/icon-';?>" alt=""><input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+
+        <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
 
     <ul>

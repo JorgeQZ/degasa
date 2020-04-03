@@ -22,9 +22,14 @@
         );
         ?>
 
-        <div class="social-links">
+        <?php  if ( is_active_sidebar( 'header-right' ) ) : ?>
+        <div id='header-right' class="social-links" role="complementary">
+            <?php dynamic_sidebar( 'header-right'); ?>
+        </div>
+        <?php endif; ?>
+        <!-- <div class="social-links">
             <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/icon-facebook.png'?>" alt="" class="social-icon"></a>
             <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/icon-twitter.png'?>" alt="" class="social-icon"></a>
             <a href="#" target="_blank"><img src="<?php echo get_template_directory_uri().'/img/icon-email.png'?>" alt="" class="social-icon"></a>
-        </div>
+        </div> -->
     </header>

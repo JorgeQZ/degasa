@@ -23,7 +23,7 @@
                         transform: translateY(calc(-100% - 5px));
                     }
                     &.hover {
-                        transform: translateY(calc(-100% - 8px));
+                        transform: translateY(calc(-100% - 3px));
                     }
                 }
             }
@@ -47,7 +47,7 @@
                 padding: 0;
                 font-size: 14px;
                 font-weight: bold;
-                color: $color-text;
+                color: $main-b;
                 height: 12px;
             }
             a {
@@ -57,7 +57,7 @@
                 line-height: 12px;
                 font-size: 12px;
                 text-decoration: none;
-                color: $color-text;
+                color: $main-b;
                 font-weight: 500;
                 transition: all 0.2s ease;
                 &:hover {
