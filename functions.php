@@ -14,6 +14,11 @@ if ( ! function_exists( 'degasa_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'degasa_setup' );
 
+function css_admin_widget(){
+    wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/css/admin_css.css', array(), filemtime( get_stylesheet_directory() . '/css/admin_css.css' ), 'all');
+}
+add_action('admin_enqueue_scripts', 'css_admin_widget');
+
 function register_degasa_menus(){
 
     register_nav_menus( array(

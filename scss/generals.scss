@@ -1,6 +1,7 @@
 @import "variables";
 @import "header";
 @import "footer";
+@import "social_widget";
 
 * {
     scroll-behavior: smooth;
@@ -14,10 +15,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: grey;
 }
 
 a {

@@ -1,3 +1,11 @@
 footer {
     padding: 30px 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .column {
+        flex: 1 0 20%;
+    }
 }

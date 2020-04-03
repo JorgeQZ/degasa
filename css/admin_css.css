@@ -1,0 +1,13 @@
+.degasa_social_icons_admin_container {
+  color: #004394;
+}
+
+.degasa_social_icons_admin_container input {
+  width: 100%;
+}
+
+.degasa_social_icons_admin_container hr {
+  border: 0;
+  border-top: 0px solid #dfae00;
+  border-bottom: 1px solid #e57800;
+}

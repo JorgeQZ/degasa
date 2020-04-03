@@ -154,7 +154,6 @@ get_header();?>
         </div>
     </div>
 </div>
-
 <div class="contact-container">
     <div class="title">
         Queremos ser parte <br>

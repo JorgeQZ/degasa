@@ -68,6 +68,47 @@ footer {
   padding: 30px 60px;
 }
 
+.social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-container a {
+  height: 30px;
+  overflow: hidden;
+}
+
+.social-container a .item {
+  width: 30px;
+  margin: 0 3px;
+}
+
+.social-container a .item img {
+  width: 100%;
+}
+
+.social-container a .item img.no-hover, .social-container a .item img.hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social-container a:hover .item img.no-hover {
+  -webkit-transform: translateY(calc(-100% - 5px));
+          transform: translateY(calc(-100% - 5px));
+}
+
+.social-container a:hover .item img.hover {
+  -webkit-transform: translateY(calc(-100% - 8px));
+          transform: translateY(calc(-100% - 8px));
+}
+
 * {
   scroll-behavior: smooth;
   -webkit-box-sizing: content-box;
@@ -81,10 +122,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background: grey;
 }
 
 a {

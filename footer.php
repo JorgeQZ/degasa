@@ -1,10 +1,13 @@
 <footer>
     <div class="column">
-        <?php  if ( is_active_sidebar( 'fcolumn-1' ) ) : ?>
-        <div id="fcolumn-1" class="widget-area" role="complementary">
-            <?php dynamic_sidebar( 'fcolumn-1' ); ?>
+        <div>
+            <?php  if ( is_active_sidebar( 'fcolumn-1' ) ) : ?>
+            <div id="fcolumn-1" class="widget-area" role="complementary">
+                <?php dynamic_sidebar( 'fcolumn-1' ); ?>
+            </div>
+
+            <?php endif; ?>
         </div>
-        <?php endif; ?>
     </div>
     <div class="column">
         <?php  if ( is_active_sidebar( 'fcolumn-2' ) ) : ?>

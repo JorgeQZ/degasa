@@ -1,0 +1,13 @@
+@import "variables";
+.degasa_social_icons_admin_container {
+    color: $main-b;
+    input {
+        width: 100%;
+    }
+
+    hr {
+        border: 0;
+        border-top: 0px solid $main-y;
+        border-bottom: 1px solid $main-o;
+    }
+}
