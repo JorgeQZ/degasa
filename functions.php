@@ -1,4 +1,7 @@
 <?php
+
+include "widgets/icons-social-media.php";
+
 if ( ! isset ( $content_width) )
 $content_width = 800;
 
@@ -54,3 +57,65 @@ function add_theme_scripts() {
     endif;
   }
   add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
+
+function wpb_widgets_init() {
+
+
+    register_sidebar( array(
+        'name' => __( 'Footer Columna 1', 'wpb' ),
+        'id' => 'fcolumn-1',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' =>__( 'Footer Columna 2', 'wpb'),
+        'id' => 'fcolumn-2',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' =>__( 'Footer Columna 3', 'wpb'),
+        'id' => 'fcolumn-3',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' =>__( 'Footer Columna 4', 'wpb'),
+        'id' => 'fcolumn-4',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+
+    register_sidebar( array(
+        'name' =>__( 'Footer Columna 5', 'wpb'),
+        'id' => 'fcolumn-5',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+
+    register_sidebar( array(
+        'name' =>__( 'Footer Column 5', 'wpb'),
+        'id' => 'fcolumn-5',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
