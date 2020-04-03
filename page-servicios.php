@@ -32,6 +32,76 @@ $ID = get_the_ID();
 
 <div class="contenedor-general-servicios">
 
+    <?php if( have_rows('servicios', $ID) ): 
+    $i = 1;    
+    ?>
+
+    <?php while( have_rows('servicios', $ID) ): the_row(); 
+        $seccion_1 = get_sub_field('seccion_1');	
+        $seccion_2 = get_sub_field('seccion_2');	
+    ?>
+
+    <div class="contenedor-general-servicio active">
+
+        <div class="contenedor-seccion1">
+                <div class="cont-col">
+                    <div class="info">
+                        <img src="<?php echo $seccion_1['logo']; ?>" alt="">
+                        <p class="desc">
+                            <?php echo $seccion_1['descripcion']; ?>
+                        </p>
+                    </div>
+                    <div class="mask">
+                        <div class="maski" style="background-image: url(<?php echo $seccion_1['fondo']; ?>);">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cont-col" style="background-image: url(<?php echo $seccion_1['imagen']; ?>);">
+                </div>
+
+        </div>
+
+        <div class="contenedor-seccion2" style="background-image: url(<?php echo $seccion_2['fondo']; ?>);">
+            <div class="cont-seccion2">
+                <div class="cont-col">
+                    <div class="img">
+                        <img src="<?php echo $seccion_2['imagen']; ?>" alt="">
+                    </div>
+                </div>
+                <div class="cont-col">
+                    <div class="info">
+                        <?php echo $seccion_2['informacion']; ?>
+                        <!--
+
+                        <p><strong style="font-size: 32px;">Contamos con <br> un catálogo de proyectos </strong></p>
+
+                        <p>
+                                que son desarrollados y comercializados directamente 
+                                por nuestra empresa bajo los estándares más altos en calidad 
+                                y diseño logrando ofrecer la mayor rentabilidad a tu inversión.
+                        </p>
+
+                        <div class="dec"></div>
+
+                        <p><strong>¿Cómo podemos ayudarte?</strong></p>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <?php
+        $i++; 
+        endwhile; ?>
+        <?php endif; ?>
+
+
+<!--
+
     <div class="contenedor-general-servicio active">
     
         <div class="contenedor-seccion1">
@@ -193,8 +263,24 @@ $ID = get_the_ID();
 
     </div>
 
+-->
 
     <div class="contenedor-tabs-servicios">
+    <?php if( have_rows('servicios', $ID) ): ?>
+
+    <?php while( have_rows('servicios', $ID) ): the_row(); 
+        $tab = get_sub_field('tab');	
+    ?>
+
+    <div class="cont-tab active <?php echo $tab['estilo_fondo']; ?>">
+        <img src="<?php echo $tab['logo']; ?>" alt="">
+        <div class="mask" style="background-image: url(<?php echo $tab['fondo']; ?>);"></div>
+    </div>
+
+    <?php
+    endwhile; ?>
+    <?php endif; ?>
+        <!--
         <div class="cont-tab active">
             <img src="<?php echo get_template_directory_uri().'/img/logo-serv-constr-tab.png'; ?>" alt="">
             <div class="mask" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-constr.jpg'; ?>);"></div>
@@ -207,6 +293,7 @@ $ID = get_the_ID();
             <img src="<?php echo get_template_directory_uri().'/img/logo-serv-proh.png'; ?>" alt="">
             <div class="mask" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-proh.jpg'; ?>);"></div>
         </div>
+        -->
     </div>
 
 
@@ -226,6 +313,29 @@ $(document).ready(function(){
             $(".contenedor-general-servicios .contenedor-general-servicio").eq(index).addClass("active");
         });
     });
+
+
+    $(".contenedor-general-servicios .contenedor-tabs-servicios .cont-tab").each(function(index){
+        if(index == 0)
+        {
+            $(this).addClass("active");
+        }
+        else{
+            $(this).removeClass("active");
+        }
+    });
+    $(".contenedor-general-servicios .contenedor-general-servicio").each(function(index){
+        if(index == 0)
+        {
+            $(this).addClass("active");
+        }
+        else{
+            $(this).removeClass("active");
+        }
+    });
+ 
+
+    
 });
 
 </script>
