@@ -78,6 +78,13 @@
   color: white;
 }
 
+.contenedor-general-nosotros .contenedor-nosotros .cont-col .info hr {
+  height: 9px;
+  width: 100%;
+  border: 0;
+  background: white;
+}
+
 .contenedor-general-nosotros .contenedor-nosotros .cont-col:first-child {
   padding: 0 43px;
   padding-top: 50px;

@@ -7,6 +7,7 @@
 
 <?php get_header(); 
 $ID = get_the_ID();
+$contenido = get_field('contenido');	
 ?>
 
 <br>
@@ -36,6 +37,21 @@ $ID = get_the_ID();
     <div class="contenedor-nosotros">
         <div class="cont-col">
             <div class="img">
+                <img src="<?php echo $contenido['imagen']; ?>" alt="">
+            </div>
+            <img class="dec" src="<?php echo get_template_directory_uri().'/img/t-p.png'; ?>" alt="">
+        </div>
+        <div class="cont-col">
+            <div class="info">
+                <?php echo $contenido['informacion']; ?>
+            </div>
+        </div>
+    </div>
+
+<!--
+    <div class="contenedor-nosotros">
+        <div class="cont-col">
+            <div class="img">
                 <img src="<?php echo get_template_directory_uri().'/img/t-f.png'; ?>" alt="">
             </div>
             <img class="dec" src="<?php echo get_template_directory_uri().'/img/t-p.png'; ?>" alt="">
@@ -59,6 +75,7 @@ $ID = get_the_ID();
             </div>
         </div>
     </div>
+-->
 
 </div>
 
