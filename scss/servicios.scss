@@ -48,6 +48,7 @@
 
             &.active{
                 height: 8vw;
+                box-shadow: 0px -6px 15px -6px rgba(0, 0, 0, 0.75);
             }
 
         }
@@ -67,7 +68,10 @@
             $seccion2-color: #e28014;
             .contenedor-seccion1{
                 .cont-col{
-                    background-color: $seccion1-color;
+                    //background-color: $seccion1-color;
+                    .mask{
+                        background-color: $seccion1-color;
+                    }
                     &::after{
                         border-left: 25px solid $seccion1-color;
                     }
@@ -98,7 +102,10 @@
             $seccion2-color: #185aa8;            
             .contenedor-seccion1{
                 .cont-col{
-                    background-color: $seccion1-color;
+                    //background-color: $seccion1-color;
+                    .mask{
+                        background-color: $seccion1-color;
+                    }
                     &::after{
                         border-left: 25px solid $seccion1-color;
                     }
@@ -129,7 +136,10 @@
             $seccion2-color: #e2b519;            
             .contenedor-seccion1{
                 .cont-col{
-                    background-color: $seccion1-color;
+                    //background-color: $seccion1-color;
+                    .mask{
+                        background-color: $seccion1-color;
+                    }
                     .info{
                         img{
                             border-bottom: 5px solid $seccion2-color;
@@ -173,6 +183,8 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 .info{
+                    z-index: 9999;
+                    position: relative;
                     img{
                         height: 40px;
                         border-bottom: 5px solid white;
@@ -192,14 +204,23 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
+                    width: calc(103% + 2px);
                     height: 100%;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    opacity: 0.1;
+                    clip-path: polygon(97% 44%, 100% 50%, 97% 56%, 97% 100%, 0 100%, 0 0, 97% 0);
+                    z-index: 9;
+                    .maski{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        opacity: .1;
+                    }
                 }
-
+                /*
                 &:first-child{
                     &::before{
                         content: "";
@@ -226,6 +247,7 @@
                         opacity: .9;
                     }
                 }
+                */
             }
         }
         .contenedor-seccion2{

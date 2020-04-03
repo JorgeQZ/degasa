@@ -44,7 +44,9 @@ $ID = get_the_ID();
                         en un abanico de posibilidades dentro de la construcción.
                     </p>
                 </div>
-                <div class="mask" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-constr.jpg'; ?>);"></div>
+                <div class="mask">
+                    <div class="maski" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-constr.jpg'; ?>);"></div>
+                </div>
             </div>
             
             <div class="cont-col" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-constr2.jpg'; ?>);">
@@ -102,7 +104,11 @@ $ID = get_the_ID();
                     que son pensados en lograr la mayor rentabilidad a tu inversión bajo los estándares mas altos en calidad y diseño.
                     </p>
                 </div>
-                <div class="mask" style="background-image: url(<?php echo get_template_directory_uri().'/img/servicios.jpg'; ?>);"></div>
+                <div class="mask">
+                    <div class="maski" style="background-image: url(<?php echo get_template_directory_uri().'/img/servicios.jpg'; ?>);">
+                        
+                    </div>
+                </div>
             </div>
             
             <div class="cont-col" style="background-image: url(<?php echo get_template_directory_uri().'/img/servicios2.jpg'; ?>);">
@@ -149,7 +155,9 @@ $ID = get_the_ID();
                         En Pro H nos encargamos de ofrecer asesoría y soluciones constructivas para muros, cielos y fachadas.
                     </p>
                 </div>
-                <div class="mask" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-proh.jpg'; ?>);"></div>
+                <div class="mask">
+                    <div class="maski" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-proh.jpg'; ?>);"></div>
+                </div>
             </div>
             
             <div class="cont-col" style="background-image: url(<?php echo get_template_directory_uri().'/img/serv-proh2.jpg'; ?>);">
