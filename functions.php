@@ -33,7 +33,7 @@ function degasa_setup_custom_logo_setup() {
     'header-text' => array( 'site-title', 'site-description' ),
     );
     add_theme_support( 'custom-logo', $defaults );
-   }
+    }
 add_action( 'after_setup_theme', 'degasa_setup_custom_logo_setup' );
 
 function add_theme_scripts() {
@@ -50,6 +50,10 @@ function add_theme_scripts() {
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
     wp_enqueue_script('custom', get_template_directory_uri().'/js/custom.js', array('jquery'),filemtime( get_stylesheet_directory() . '/js/custom.js' ), false);
+
+    if(is_page_template('page-servicios.php')){
+        wp_enqueue_style( 'servicios', get_template_directory_uri() . '/css/servicios.css', array(), filemtime( get_stylesheet_directory() . '/css/servicios.css' ), 'all');
+    }
 
     if(is_page_template('front-page.php')):
     wp_enqueue_style( 'front-page', get_template_directory_uri() . '/css/front-page.css', array(), filemtime( get_stylesheet_directory() . '/css/front-page.css' ), 'all');
