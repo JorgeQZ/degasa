@@ -1,0 +1,24 @@
+.contenedor-general-contacto {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-general-contacto .cont-col {
+  width: 50%;
+}
+
+.contenedor-general-contacto .cont-col iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-general-contacto .cont-col .contenedor-contacto {
+  background-image: url(../img/banner-contacto.jpg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

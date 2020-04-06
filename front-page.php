@@ -154,6 +154,12 @@ get_header();?>
         </div>
     </div>
 </div>
+
+<!-- Contacto -->
+<?php get_template_part('template-parts/contacto') ?>
+<!-- Contacto -->
+
+<!--
 <div class="contact-container">
     <div class="title">
         Queremos ser parte <br>
@@ -189,4 +195,5 @@ get_header();?>
         </div>
     </div>
 </div>
+-->
 <?php get_footer();?>

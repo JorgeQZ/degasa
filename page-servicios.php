@@ -10,7 +10,7 @@ $ID = get_the_ID();
 ?>
 
 <!-- Banner -->
-<?php get_template_part('template-parts/banner','hero') ?>
+<?php get_template_part('template-parts/banner') ?>
 <!-- Banner -->
 
 <div class="contenedor-general-servicios">
@@ -282,6 +282,9 @@ $ID = get_the_ID();
 
 </div>
 
+<!-- Contacto -->
+<?php get_template_part('template-parts/contacto') ?>
+<!-- Contacto -->
 
 <?php get_footer(); ?>
 

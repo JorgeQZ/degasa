@@ -11,7 +11,7 @@ $contenido = get_field('contenido');
 ?>
 
 <!-- Banner -->
-<?php get_template_part('template-parts/banner','hero') ?>
+<?php get_template_part('template-parts/banner') ?>
 <!-- Banner -->
 
 <div class="contenedor-general-nosotros">
@@ -61,5 +61,8 @@ $contenido = get_field('contenido');
 
 </div>
 
+<!-- Contacto -->
+<?php get_template_part('template-parts/contacto') ?>
+<!-- Contacto -->
 
 <?php get_footer(); ?>
