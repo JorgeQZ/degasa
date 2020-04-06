@@ -29,7 +29,8 @@ a {
     align-items: center;
 
     .cont-info{
-        width: 50%;
+        width: 90%;
+        max-width: 635px;
         padding: 0 5%;   
         color: white;
         text-transform: uppercase;
@@ -87,4 +88,28 @@ a {
             }
         }  
     }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .contenedor-general-banner{
+        .cont-info{
+            width: 90%;
+            h1{
+                font-size: 32px;
+                line-height: 36px;
+                margin: 0;
+            }
+            h2{
+                font-size: 26px;
+                line-height: 30px;
+            }
+            h3{
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+    } 
+
 }
