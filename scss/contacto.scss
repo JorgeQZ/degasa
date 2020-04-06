@@ -14,6 +14,109 @@
             background-repeat: no-repeat;
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .contact-container {
+                background: none;
+                padding: 60px 0;
+                padding: 0 10% 0 7%;
+                width: 83%;
+                .form {
+                    margin-top: 15px;
+                    .col {
+                        max-width: none;
+                        padding: 0;
+                        .form-control{
+                            margin: 12px 0;
+                            input{
+                                width: calc(100% - 20px);
+                            }
+                            textarea{
+                                width: calc(100% - 20px);
+                                height: 125px;
+                            }
+
+                            &:nth-child(2){
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        &:nth-child(1){
+                            margin-right: 10px;
+                        }
+                        &:nth-child(2){
+                            margin-left: 10px;
+                        }
+                        &:nth-child(3){
+                            flex: 1 0 100%;
+                        }
+                        &:last-child{
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .contenedor-general-contacto{
+        .cont-col{
+            .contenedor-contacto{
+                .contact-container {
+                    padding: 40px 20px;
+                    .title{
+                        font-size: 26px;
+                    }
+                    .subtitle{
+                        font-size: 16px;
+                    }
+                    .form {
+                        .col {
+                            flex: 1 0 100%;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .contenedor-general-contacto{
+        flex-wrap: wrap;
+        .cont-col{
+            width: 100%;
+            iframe{
+                height: 500px;
+            }
+            .contenedor-contacto{
+                .contact-container {
+                    padding: 40px 20px;
+                    .title{
+                        font-size: 22px;
+                    }
+                    .subtitle{
+                        font-size: 15px;
+                    }
+                    .form {
+                        .col {
+                            flex: 1 0 100%;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
