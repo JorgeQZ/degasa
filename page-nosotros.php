@@ -10,27 +10,9 @@ $ID = get_the_ID();
 $contenido = get_field('contenido');	
 ?>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+<!-- Banner -->
+<?php get_template_part('template-parts/banner','hero') ?>
+<!-- Banner -->
 
 <div class="contenedor-general-nosotros">
 
