@@ -1,7 +1,8 @@
 <?php
 
+include "widgets/icons-social-media-header.php";
+
 include "widgets/icons-social-media.php";
-include "just-testing/customizing-theme.php";
 
 if ( ! isset ( $content_width) )
 $content_width = 800;
@@ -73,9 +74,11 @@ function add_theme_scripts() {
     }
 
     if(is_page_template('front-page.php')):
-    wp_enqueue_style( 'front-page', get_template_directory_uri() . '/css/front-page.css', array(), filemtime( get_stylesheet_directory() . '/css/front-page.css' ), 'all');
-
+        wp_enqueue_style( 'front-page', get_template_directory_uri() . '/css/front-page.css', array(), filemtime( get_stylesheet_directory() . '/css/front-page.css' ), 'all');
     endif;
+    if ( is_user_logged_in() ) {
+        wp_enqueue_style( 'logged_css', get_template_directory_uri() . '/css/logged_css.css', array(), filemtime( get_stylesheet_directory() . '/css/logged_css.css' ), 'all');
+    }
   }
   add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 

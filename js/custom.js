@@ -1,6 +1,27 @@
 
 $(document).ready(function () {
 
+    // Menu mobile button
+    $('.menu-button').click(function (e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('header').removeClass('active');
+            $('.social-links').removeClass('active');
+
+            $('.main-menu').removeClass('active');
+        } else {
+            $(this).addClass('active');
+            $('header').addClass('active');
+            $('.social-links').addClass('active');
+            $('.main-menu').addClass('active');
+        }
+    });
+    // Menu mobile button
+
+
+
     // Scroll Navbar beheavior
     var auxScroll_ = 0;
 
@@ -25,7 +46,7 @@ $(document).ready(function () {
     });
 
     var home_hero = $('.home-hero-slider');
-    console.log(home_hero);
+    // console.log(home_hero);
     if (home_hero.length > 0) {
         $(".home-hero-slider").owlCarousel({
             loop: true,
@@ -37,7 +58,7 @@ $(document).ready(function () {
     }
 
     var sliders_home = $(".col-1-slider");
-    console.log(sliders_home);
+    // console.log(sliders_home);
 
     if (sliders_home.length > 0) {
         $(".col-1-slider").owlCarousel({
