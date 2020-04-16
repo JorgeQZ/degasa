@@ -41,28 +41,42 @@ get_header();?>
     <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/const.jpg'; ?>)">
         <div class="overlay"></div>
         <div class="content">
-            <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-const.png'; ?>" alt="DEGASA Construcción">
+            <div class="img-logo">
+                <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-const.png'; ?>" alt="DEGASA Construcción">
+                <img class="logo-hover" src="<?php echo get_template_directory_uri().'/img/logo-const-white.png'; ?>" alt="DEGASA Construcción">
+            </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-
-        <div class="vermas">Ver más >></div>
+        <a href="#">
+            <div class="vermas">Ver más >></div>
+        </a>
     </div>
     <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/desarrollo.jpg'; ?>)">
         <div class="overlay"></div>
         <div class="content">
-            <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-des.png'; ?>" alt="DEGASA Desarrollo">
+            <div class="img-logo">
+                <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-des.png'; ?>" alt="DEGASA Desarrollo">
+                <img class="logo-hover" src="<?php echo get_template_directory_uri().'/img/logo-des-white.png'; ?>" alt="DEGASA Desarrollo">
+            </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-        <div class="vermas">Ver más >></div>
+        <a href="#">
+            <div class="vermas">Ver más >></div>
+        </a>
 
     </div>
     <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/prefabricados.jpg'; ?>)">
         <div class="overlay"></div>
         <div class="content">
-            <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-proh.png'; ?>" alt="Prefabricados Ligeros">
+            <div class="img-logo">
+                <img class="logo" src="<?php echo get_template_directory_uri().'/img/logo-proh.png'; ?>" alt="Prefabricados Ligeros">
+                <img class="logo-hover" src="<?php echo get_template_directory_uri().'/img/logo-proh-white.png'; ?>" alt="Prefabricados Ligeros">
+            </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-        <div class="vermas">Ver más >></div>
+        <a href="#">
+            <div class="vermas">Ver más >></div>
+        </a>
 
     </div>
 </div>

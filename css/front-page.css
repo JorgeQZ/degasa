@@ -163,11 +163,20 @@
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
-  .grid-container .item .content .logo {
-    width: 200px;
-    margin: 0 auto;
+  .grid-container .item .content .img-logo {
     left: calc(50% - 100px);
     position: relative;
+  }
+  .grid-container .item .content .img-logo .logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .grid-container .item .content .img-logo .logo-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    margin: 0 auto;
   }
   .grid-container .item .content .text {
     color: white;
@@ -492,18 +501,18 @@
     position: relative;
   }
   .about-container .content .vermas:before {
-    top: 0;
-    left: -100%;
+    top: -100%;
+    left: 0%;
     position: absolute;
     width: 100%;
     height: 100%;
     content: "";
-    background-color: #dfae00;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    background-color: #e57800;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
   }
   .about-container .content .vermas:hover:before {
-    left: 0;
+    top: 0;
   }
   .grid-container {
     height: 100vh;
@@ -556,11 +565,23 @@
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
-  .grid-container .item .content .logo {
-    width: 200px;
-    margin: 0 auto;
+  .grid-container .item .content .img-logo {
     left: calc(50% - 100px);
     position: relative;
+  }
+  .grid-container .item .content .img-logo .logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .grid-container .item .content .img-logo .logo-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    margin: 0 auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
   }
   .grid-container .item .content .text {
     color: white;
@@ -582,16 +603,15 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .grid-container .item:hover .overlay {
+  .grid-container .item:hover .overlay,
+  .grid-container .item:hover .vermas,
+  .grid-container .item:hover .content .img-logo .logo-hover {
     opacity: 1;
   }
   .grid-container .item:hover .content .text {
     opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
-  }
-  .grid-container .item:hover .vermas {
-    opacity: 1;
   }
   .clients-container {
     padding: 100px 10px;
@@ -713,15 +733,16 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative;
+    display: block;
   }
   .projects-container .grid-slider .col .slide-projects {
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   .projects-container .grid-slider .col .slide-projects .item {
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
   .projects-container .grid-slider .col .slide-projects .owl-dots {
     width: 100%;
@@ -730,14 +751,13 @@
   }
   .projects-container .grid-slider .col .row {
     height: 50%;
+    width: 100%;
   }
   .projects-container .grid-slider .col .row .slide-projects {
     width: 100%;
-    height: 250px;
   }
   .projects-container .grid-slider .col .row .slide-projects .item {
     background-size: cover;
-    height: 250px;
     width: 100%;
   }
   .projects-container .file-text {
@@ -763,6 +783,11 @@
   }
   .projects-container .file-text .text a {
     color: #d54041;
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+  .projects-container .file-text .text a:hover {
+    color: #004394;
   }
   .projects-container .file-text .text strong {
     font-size: 31px;
