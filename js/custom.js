@@ -8,45 +8,46 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-
         if (scroll >= 150) {
             $('header').addClass('scrolled-color');
         } else {
             $('header').removeClass('scrolled-color');
         }
 
-
         if (ScrollBeheavior(auxScroll_, scroll)) {
             // if scroll down
             $('header').css({ top: '-100px' });
-            console.log(auxScroll_, scroll);
-
         } else {
             //scroll up
             $('header').css({ top: '0' });
-            console.log(auxScroll_, scroll);
-
         }
         auxScroll_ = scroll;
     });
 
-    if ('.home-hero-slider') {
+    var home_hero = $('.home-hero-slider');
+    console.log(home_hero);
+    if (home_hero.length > 0) {
         $(".home-hero-slider").owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 0,
             nav: false,
             dots: true,
             items: 1
         });
     }
 
-    $(".col-1-slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: true,
-        items: 1
-    });
+    var sliders_home = $(".col-1-slider");
+    console.log(sliders_home);
+
+    if (sliders_home.length > 0) {
+        $(".col-1-slider").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            items: 1
+        });
+    }
 
 });
 

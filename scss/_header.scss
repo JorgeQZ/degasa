@@ -1,66 +1,131 @@
-header {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    transition: background-color 0.1s ease-in, top 0.7s ease-in-out;
-    &.scrolled-color {
-        background-color: $main-b;
-    }
-    .brand-logo {
-        top: calc(50% - 17.5px);
-        left: 10px;
-        position: absolute;
-        width: auto;
-        max-height: 35px;
-        .customize-partial-edit-shortcut-custom_logo {
-            left: 30px;
+@media screen and (min-width: 320px) {
+    header {
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        transition: background-color 0.1s ease-in, top 0.7s ease-in-out;
+        &.scrolled-color {
+            background-color: $main-b;
         }
-        .custom-logo {
-            max-width: 180px;
-            height: auto;
+        .brand-logo {
+            top: calc(50% - 17.5px);
+            left: 10px;
+            position: absolute;
+            width: auto;
+            max-height: 35px;
+            .customize-partial-edit-shortcut-custom_logo {
+                left: 30px;
+            }
+            .custom-logo {
+                max-width: 120px;
+                height: auto;
+            }
         }
-    }
-    .main-menu {
-        //Container
-        .menu {
-            //Menu
-            padding: 0;
-            margin: 0;
-            display: flex;
-            li {
-                list-style: none;
-                padding: 0 10px;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    transition: all 0.2s ease;
-                    &:hover {
-                        color: $main-y;
-                    }
-                }
-                &.current-menu-item {
+        .main-menu {
+            //Container
+            .menu {
+                //Menu
+                padding: 0;
+                margin: 0;
+                display: flex;
+                li {
+                    list-style: none;
+                    padding: 0 10px;
                     a {
-                        font-weight: 900;
-                        color: $main-y;
+                        text-decoration: none;
+                        color: white;
+                        transition: all 0.2s ease;
+                        &:hover {
+                            color: $main-y;
+                        }
+                    }
+                    &.current-menu-item {
+                        a {
+                            font-weight: 900;
+                            color: $main-y;
+                        }
                     }
                 }
             }
         }
+        .social-links {
+            a {
+                img {
+                    width: 25px;
+                }
+            }
+        }
     }
-    .social-links {
-        position: absolute;
-        top: calc(50% - 12.5px);
-        right: 10px;
-        a {
-            img {
-                width: 25px;
+}
+@media screen and (min-width: 990px) {
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        transition: background-color 0.1s ease-in, top 0.7s ease-in-out;
+        &.scrolled-color {
+            background-color: $main-b;
+        }
+        .brand-logo {
+            top: calc(50% - 17.5px);
+            left: 10px;
+            position: absolute;
+            width: auto;
+            max-height: 35px;
+            .customize-partial-edit-shortcut-custom_logo {
+                left: 30px;
+            }
+            .custom-logo {
+                max-width: 180px;
+                height: auto;
+            }
+        }
+        .main-menu {
+            //Container
+            .menu {
+                //Menu
+                padding: 0;
+                margin: 0;
+                display: flex;
+                li {
+                    list-style: none;
+                    padding: 0 10px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: all 0.2s ease;
+                        &:hover {
+                            color: $main-y;
+                        }
+                    }
+                    &.current-menu-item {
+                        a {
+                            font-weight: 900;
+                            color: $main-y;
+                        }
+                    }
+                }
+            }
+        }
+        .social-links {
+            position: absolute;
+            top: calc(50% - 12.5px);
+            right: 10px;
+            a {
+                img {
+                    width: 25px;
+                }
             }
         }
     }
