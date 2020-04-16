@@ -112,47 +112,77 @@ get_header();?>
                 <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
 
                 </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="row">
-                <div class="owl-carousel owl-theme col-1-slider slide-projects">
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
 
-                    </div>
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
-
-                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="owl-carousel owl-theme col-1-slider slide-projects">
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
 
-                    </div>
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
-
-                    </div>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="row">
                 <div class="owl-carousel owl-theme col-1-slider slide-projects">
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slider-2.jpg';?>)">
 
                     </div>
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slider-2.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slider-2.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slider-2.jpg';?>)">
 
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="owl-carousel owl-theme col-1-slider slide-projects">
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-4.jpg';?>)">
 
                     </div>
-                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/nike-slide.jpg';?>)">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-4.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-4.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-4.jpg';?>)">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="owl-carousel owl-theme col-1-slider slide-projects">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-3.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-3.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-3.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-3.jpg';?>)">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme col-1-slider slide-projects">
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-5.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-5.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-5.jpg';?>)">
+
+                    </div>
+                    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/slide-5.jpg';?>)">
 
                     </div>
                 </div>

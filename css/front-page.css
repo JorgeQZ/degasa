@@ -343,6 +343,15 @@
     position: absolute;
     bottom: 0;
   }
+  .projects-container .grid-slider .col .slide-projects .owl-dots button span {
+    width: 7px;
+    height: 7px;
+    margin: 5px 4px;
+    background-color: #fff;
+  }
+  .projects-container .grid-slider .col .slide-projects .owl-dots button.active span {
+    background-color: #989898;
+  }
   .projects-container .grid-slider .col .row {
     width: 50%;
     height: 50%;

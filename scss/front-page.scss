@@ -307,6 +307,19 @@
                         width: 100%;
                         position: absolute;
                         bottom: 0;
+                        button {
+                            span {
+                                width: 7px;
+                                height: 7px;
+                                margin: 5px 4px;
+                                background-color: #fff;
+                            }
+                            &.active {
+                                span {
+                                    background-color: #989898;
+                                }
+                            }
+                        }
                     }
                 }
                 .row {
