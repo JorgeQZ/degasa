@@ -1,26 +1,27 @@
 <?php
 /* Template Name: Front Page */
 get_header();?>
-<div class="owl-carousel owl-theme home-hero-slider">
-    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/home-slide.jpg';?>)">
-        <div class="content">
-            <div>
-                CALIDAD Y SEGURIDAD
-                <br>
-                <div class="bg-text">A TU INVERSION</div>
+<div class="cont">
+    <div class="owl-carousel owl-theme home-hero-slider">
+        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/home-slide.jpg';?>)">
+            <div class="content">
+                <div>
+                    CALIDAD Y SEGURIDAD
+                    <br>
+                    <div class="bg-text">A TU INVERSION</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/home-slide.jpg';?>)">
-        <div class="content">
-            <div>
-                CALIDAD Y SEGURIDAD <br>
-                <div class="bg-text">A TU INVERSION</div>
+        <div class="item" style="background-image: url(<?php echo get_template_directory_uri().'/img/home-slide.jpg';?>)">
+            <div class="content">
+                <div>
+                    CALIDAD Y SEGURIDAD <br>
+                    <div class="bg-text">A TU INVERSION</div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="about-container">
     <div class="content">
         <div class="title" data-text="CALIDAD Y SEGURIDAD">
@@ -247,11 +248,12 @@ get_header();?>
 
 
 <style>
-.home-hero-slider .item > .content,
+.home-hero-slider .item>.content,
 .grid-container .item .content,
-.clients-container > div,
-.projects-container > div,
-.contact-container > div{
+.clients-container>div,
+.projects-container>div,
+.contact-container>div,
+.about-container .content {
     opacity: 0;
 }
 
@@ -263,7 +265,8 @@ var $j = jQuery.noConflict();
 
 jQuery(function($j) {
 
-    $j('.home-hero-slider .item > .content, .grid-container .item .content, .clients-container > div, .projects-container > div, .contact-container > div').waypoint(function() {
+    $j('.home-hero-slider .item > .content, .grid-container .item .content, .clients-container > div, .projects-container > div, .contact-container > div, .about-container .content').
+    waypoint(function() {
         $j(this).toggleClass('fadeIn animated');
     }, {
         offset: '75%',
