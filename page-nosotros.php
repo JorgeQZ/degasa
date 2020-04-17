@@ -21,7 +21,7 @@ $contenido = get_field('contenido');
             <div class="img">
                 <img src="<?php echo $contenido['imagen']; ?>" alt="">
             </div>
-            <img class="dec" src="<?php echo get_template_directory_uri().'/img/t-p.png'; ?>" alt="">
+            <img class="dec" src="<?php echo get_template_directory_uri().'/img/nosotros-constructores.png'; ?>" alt="">
         </div>
         <div class="cont-col">
             <div class="info">

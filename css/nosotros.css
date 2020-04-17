@@ -34,6 +34,7 @@
 
 .contenedor-general-nosotros .contenedor-nosotros .cont-col .img {
   border: 10px solid #fcd700;
+  border-bottom: 0;
 }
 
 .contenedor-general-nosotros .contenedor-nosotros .cont-col .img img {
