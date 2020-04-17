@@ -47,7 +47,7 @@ get_header();?>
             </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-        <a href="#">
+        <a href="servicios/?servicio=0">
             <div class="vermas">Ver más >></div>
         </a>
     </div>
@@ -60,7 +60,7 @@ get_header();?>
             </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-        <a href="#">
+        <a href="servicios/?servicio=1">
             <div class="vermas">Ver más >></div>
         </a>
 
@@ -74,7 +74,7 @@ get_header();?>
             </div>
             <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic natus tenetur earum! Harum aliquid temporibus libero ipsa explicabo dolorum culpa ipsam, velit molestiae odio voluptatibus placeat, eaque suscipit omnis ducimus.</div>
         </div>
-        <a href="#">
+        <a href="servicios/?servicio=2">
             <div class="vermas">Ver más >></div>
         </a>
 
@@ -241,3 +241,43 @@ get_header();?>
 </div>
 -->
 <?php get_footer();?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+
+<style>
+.home-hero-slider .item > .content,
+.grid-container .item .content,
+.clients-container > div,
+.projects-container > div,
+.contact-container > div{
+    opacity: 0;
+}
+
+</style>
+
+
+<script>
+var $j = jQuery.noConflict();
+
+jQuery(function($j) {
+
+    $j('.home-hero-slider .item > .content, .grid-container .item .content, .clients-container > div, .projects-container > div, .contact-container > div').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '75%',
+        triggerOnce: true
+    });
+
+    /*
+    $j('.hero-banner .hero-title').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '100%',
+        triggerOnce: true
+    });
+    */
+
+});
+</script>

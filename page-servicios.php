@@ -301,27 +301,105 @@ $(document).ready(function(){
     });
 
 
-    $(".contenedor-general-servicios .contenedor-tabs-servicios .cont-tab").each(function(index){
-        if(index == 0)
-        {
-            $(this).addClass("active");
+    var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
         }
-        else{
-            $(this).removeClass("active");
-        }
-    });
-    $(".contenedor-general-servicios .contenedor-general-servicio").each(function(index){
-        if(index == 0)
-        {
-            $(this).addClass("active");
-        }
-        else{
-            $(this).removeClass("active");
-        }
-    });
- 
+    };
+    var serv = getUrlParameter('servicio');
+
+    if(serv){
+        $(".contenedor-general-servicios .contenedor-tabs-servicios .cont-tab").each(function(index){
+            if(index == serv)
+            {
+                $(this).addClass("active");
+            }
+            else{
+                $(this).removeClass("active");
+            }
+        });
+        $(".contenedor-general-servicios .contenedor-general-servicio").each(function(index){
+            if(index == serv)
+            {
+                $(this).addClass("active");
+            }
+            else{
+                $(this).removeClass("active");
+            }
+        });
+    }
+    else{
+        $(".contenedor-general-servicios .contenedor-tabs-servicios .cont-tab").each(function(index){
+            if(index == 0)
+            {
+                $(this).addClass("active");
+            }
+            else{
+                $(this).removeClass("active");
+            }
+        });
+        $(".contenedor-general-servicios .contenedor-general-servicio").each(function(index){
+            if(index == 0)
+            {
+                $(this).addClass("active");
+            }
+            else{
+                $(this).removeClass("active");
+            }
+        });
+    }
 
     
 });
 
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+
+<style>
+.contenedor-general-banner .cont-info,
+.contenedor-general-servicios .contenedor-tabs-servicios,
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col .info,
+.contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion2 .cont-seccion2 .cont-col .img,
+.contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info,
+.contact-container > div{
+    opacity: 0;
+}
+
+</style>
+
+
+<script>
+var $j = jQuery.noConflict();
+
+jQuery(function($j) {
+
+    $j('.contenedor-general-banner .cont-info, .contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion1 .cont-col .info, .contenedor-general-servicios .contenedor-general-servicio:nth-child(1) .contenedor-seccion2 .cont-seccion2 .cont-col .img, .contenedor-general-servicios .contenedor-general-servicio .contenedor-seccion2 .cont-seccion2 .cont-col .info, .contact-container > div').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '75%',
+        triggerOnce: true
+    });
+
+    
+    $j('.contenedor-general-servicios .contenedor-tabs-servicios').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '100%',
+        triggerOnce: true
+    });
+    
+
+});
 </script>

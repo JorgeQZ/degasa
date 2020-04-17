@@ -50,6 +50,7 @@ function add_theme_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 
     wp_enqueue_style( 'generals', get_template_directory_uri() . '/css/generals.css', array(), filemtime( get_stylesheet_directory() . '/css/generals.css' ), 'all');
+    wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array(), filemtime( get_stylesheet_directory() . '/css/animate.css' ), 'all');
 
     wp_enqueue_style( 'owl.carousel.min', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), '1.1', 'all');
 

@@ -25,3 +25,40 @@ $ID = get_the_ID();
 
 
 <?php get_footer(); ?>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+
+<style>
+.contact-container > div{
+    opacity: 0;
+}
+
+</style>
+
+
+<script>
+var $j = jQuery.noConflict();
+
+jQuery(function($j) {
+
+    $j('.contact-container > div').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '75%',
+        triggerOnce: true
+    });
+
+    /*
+    $j('.contenedor-general-servicios .contenedor-tabs-servicios').waypoint(function() {
+        $j(this).toggleClass('fadeIn animated');
+    }, {
+        offset: '100%',
+        triggerOnce: true
+    });
+    */
+
+});
+</script>
