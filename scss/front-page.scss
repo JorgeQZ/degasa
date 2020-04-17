@@ -724,17 +724,17 @@
                 font-size: 20px;
                 margin: 0 10px;
                 color: #d54041;
-                line-height: 1.2;
+                line-height: 1.1;
                 a {
                     color: #d54041;
                     transition: color 0.2s linear;
-
                     &:hover {
                         color: $main-b;
                     }
                 }
                 strong {
                     font-size: 31px;
+                    line-height: 1.1;
                 }
             }
         }

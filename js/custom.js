@@ -29,19 +29,24 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll >= 150) {
+        console.log(scroll);
+        if (scroll >= 200) {
             $('header').addClass('scrolled-color');
-        } else {
+            if (ScrollBeheavior(auxScroll_, scroll)) {
+                // if scroll down
+                $('header').css({ top: '-100px' });
+            } else {
+                //scroll up
+                $('header').css({ top: '0' });
+            }
+        } else if (scroll == 0) {
+            $('header').removeClass('scrolled-color');
+        }
+        else {
             $('header').removeClass('scrolled-color');
         }
 
-        if (ScrollBeheavior(auxScroll_, scroll)) {
-            // if scroll down
-            $('header').css({ top: '-100px' });
-        } else {
-            //scroll up
-            $('header').css({ top: '0' });
-        }
+
         auxScroll_ = scroll;
     });
 

@@ -797,7 +797,7 @@
     font-size: 20px;
     margin: 0 10px;
     color: #d54041;
-    line-height: 1.2;
+    line-height: 1.1;
   }
   .projects-container .file-text .text a {
     color: #d54041;
@@ -809,5 +809,6 @@
   }
   .projects-container .file-text .text strong {
     font-size: 31px;
+    line-height: 1.1;
   }
 }

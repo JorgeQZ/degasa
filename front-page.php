@@ -8,7 +8,7 @@ get_header();?>
                 <div>
                     CALIDAD Y SEGURIDAD
                     <br>
-                    <div class="bg-text">A TU INVERSION</div>
+                    <div class="bg-text">A TU INVERSIÓN</div>
                 </div>
             </div>
         </div>
@@ -16,7 +16,7 @@ get_header();?>
             <div class="content">
                 <div>
                     CALIDAD Y SEGURIDAD <br>
-                    <div class="bg-text">A TU INVERSION</div>
+                    <div class="bg-text">A TU INVERSIÓN</div>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@ get_header();?>
         <div class="text">
             Por más de 10 años, Grupo Degasa ha logrado consolidarse como una empresa constructora capaz de cristalizar proyectos al más alto nivel de calidad manteniendo los costos dentro de los intereses de nuestros clientes y terminando en los tiempos compromiso.
         </div>
-        <a href="#">
+        <a href="http://akevia.com/sites/degasa/nosotros/">
             <div class="vermas">
                 <span>ver más<span>
             </div>
