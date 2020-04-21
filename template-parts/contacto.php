@@ -6,7 +6,7 @@
     <div class="subtitle">
         Póngase en contacto con nosotros
     </div>
-    <div class="form">
+    <!-- <div class="form">
         <div class="col">
             <div class="form-control">
                 <input type="text" placeholder="NOMBRE">
@@ -31,5 +31,8 @@
         <div class="col">
             <button type="submit"><span>Enviar</span></button>
         </div>
-    </div>
+    </div> -->
+    <?php
+    echo do_shortcode('[contact-form-7 id="173" title="Contacto"]');
+    ?>
 </div>

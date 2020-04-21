@@ -21,6 +21,19 @@ a {
     text-decoration: none;
 }
 
+// Contact form
+.wpcf7-form-control-wrap {
+    width: 100%;
+}
+span.wpcf7-not-valid-tip {
+    padding: 5px 0;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #f7e700;
+    color: white;
+}
 // Banner
 .contenedor-general-banner {
     width: 100%;

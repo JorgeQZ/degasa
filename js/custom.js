@@ -1,4 +1,4 @@
-
+$ = jQuery;
 $(document).ready(function () {
 
     // Menu mobile button
