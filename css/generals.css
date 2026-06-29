@@ -410,6 +410,27 @@ div.wpcf7-acceptance-missing {
   color: white;
 }
 
+.wrapper-cont {
+  height: 100vh;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/banner-contacto.jpg);
+  color: white;
+}
+
+.wrapper-cont a {
+  color: white;
+  text-decoration: underline;
+}
+
 .contenedor-general-banner {
   width: 100%;
   min-height: 100vh;

@@ -15,6 +15,7 @@ if ( ! function_exists( 'degasa_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'customize-selective-refresh-widgets' );
         add_theme_support('editor-styles');
+        add_image_size( 'client-size', 919, 313, false );
     }
 endif;
 add_action( 'after_setup_theme', 'degasa_setup' );

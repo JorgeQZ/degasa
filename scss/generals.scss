@@ -34,6 +34,19 @@ div.wpcf7-acceptance-missing {
     border: 2px solid #f7e700;
     color: white;
 }
+.wrapper-cont {
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/banner-contacto.jpg);
+    color: white;
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
 // Banner
 .contenedor-general-banner {
     width: 100%;
